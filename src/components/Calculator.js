@@ -10,7 +10,6 @@ const[param, setParam] = useState();
   const calculating = ()=>{
     let initialLoan = document.getElementById('initialLoan');
     let downPayment = document.getElementById('downPayment');
-        console.log(initialLoan.value)
 
           if (
             parseInt(initialLoan.value) > parseInt(props.sendProps.loan) &&
@@ -33,7 +32,6 @@ let payment = (amount * interest * powInterest) / (powInterest - 1);
 
 let monthlypayment = payment.toFixed(2) + ' $';
 setParam(<h2>Monthly payment: {monthlypayment}</h2>)
-    console.log(monthlypayment)
   }
 
   

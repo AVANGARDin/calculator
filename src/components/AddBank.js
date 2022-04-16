@@ -14,7 +14,6 @@ const sendForm = (el)=>{
     minimumPayment: formElem.minimumPayment.value + ' %',
     loanTerm: formElem.loanTerm.value + ' years'
   }
-console.log(bank)
   fetch(`http://localhost:4200/addbank`,{
     method: "POST",
     headers: {
@@ -27,7 +26,7 @@ navigate('/')
 }
   
   return (
-        <div>AddBank
+        <div><h2>Add bank</h2>
         <form id='formElem'>
           <label>Name: <input type="text" name='name'></input></label><br/>
           <label>Interest rate: <input type="number" name='rate'></input> %</label><br/>

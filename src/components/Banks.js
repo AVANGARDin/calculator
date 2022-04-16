@@ -36,8 +36,8 @@ const removeBank = (el)=>{
            Minimum down payment: {el.minimumPayment}<br/>
            Loan term: {el.loanTerm}
         </p>
-        <button type='submit' onClick={removeBank} data-id={el.id} method="POST">Delete bank</button>
-        <Link to='/editbank'><button type='submit' onClick={editBank} data-id={el.id}>EditBank</button></Link>
+        <button onClick={removeBank} data-id={el.id}>Delete bank</button>
+        <Link to='/editbank'><button onClick={editBank} data-id={el.id}>EditBank</button></Link>
         </div>
     })}
     </>

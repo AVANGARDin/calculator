@@ -7,4 +7,4 @@ Step by step
 
 2. npm run server
 
-3.npm start
+3. npm start

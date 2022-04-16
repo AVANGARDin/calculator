@@ -18,7 +18,6 @@ export default function MortgageCalculator() {
 },[]);
 
   const chooseBank = (el) => {
-    console.log(el.currentTarget.dataset.id)
     setProps(listOfBanks.find(element=>element.id == el.currentTarget.dataset.id))
   }
 

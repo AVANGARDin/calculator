@@ -44,7 +44,7 @@ export default function EditBank() {
 
 
   return (
-    <div>EditBank
+    <div><h2>Edit bank</h2>
         <form id='formElem'>
           <label>Name: <input type="text" name='name'></input></label><br/>
           <label>Interest rate: <input type="number" name='rate'></input> %</label><br/>
