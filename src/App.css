@@ -28,6 +28,51 @@
   color: #61dafb;
 }
 
+.container-for-banks{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bank {
+  width: 250px;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+  color:black;
+}
+header {
+
+  margin: 0 auto;
+  margin-top: 10px;
+}
+h1 {
+  font-size: 1.5em;
+}
+
+nav>a {
+  margin-left: 5px;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+nav>a:hover {
+  background-color: black;
+  color: white;
+}
+
+.bank-calculator{
+  margin-top:25 px;
+  display: flex;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

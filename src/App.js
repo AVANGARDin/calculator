@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import {Routes, Route, Link, Navigate} from 'react-router-dom'
+import ListOfBanks from './components/ListOfBanks';
+import MortgageCalculator from './components/MortgageCalculator';
+import AddBank from './components/AddBank';
+import EditBank from './components/EditBank';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<>
+<header>
+      <nav>
+        <Link to="/">List of banks</Link>
+        <Link to="/calculator">Mortgage calculator</Link>
+      </nav>
+    </header>
+    <Routes>
+      <Route path='/' element={<ListOfBanks/>} />
+      <Route path='/calculator' element={<MortgageCalculator/>}/>
+      <Route path='/addbank' element={<AddBank />}/>
+      <Route path='/editbank' element={<EditBank/>}/>
+      <Route
+        path="*"
+        element={<Navigate to="/" replace />}
+    />
+    </Routes>
+</>
   );
 }
 
